@@ -9,6 +9,7 @@ import { AboutSite } from '../Pages/AboutSite'
 import { ImageGallery } from '../Pages/ImageGallery'
 import News from '../Pages/News'
 import Contacts from '../Pages/Contacts'
+import ActualNews from '../Pages/ActualNews'
 
 export default class Header extends Component {
   render() {
@@ -31,6 +32,7 @@ export default class Header extends Component {
                 <Nav.Link href='/aboutSite'>Про сайт</Nav.Link>
                 <Nav.Link href='/imageGallery'>Галерея картинок</Nav.Link>
                 <Nav.Link href='/news'>Новини</Nav.Link>
+                <Nav.Link href='/actualnews'>Актуальні новин</Nav.Link>
                 <Nav.Link href='/contacts'>Контакти</Nav.Link>
               </Nav>
             </NavbarCollapse>
@@ -41,6 +43,7 @@ export default class Header extends Component {
           <Switch>
             <Route exact path='/' component={Home}/>
             <Route exact path='/aboutSite' component={AboutSite}/>
+            <Route exact path='/actualnews' component={ActualNews}/>
             <Route exact path='/imageGallery' component={ImageGallery}/>
             <Route exact path='/news' component={News}/>
             <Route exact path='/contacts' component={Contacts}/>
